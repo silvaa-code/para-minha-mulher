@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mia ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de Cores e Fontes */
+        :root {
+            --rosa-claro: #fce4ec;
+            --rosa-detalhe: #ff80ab;
+            --branco: #ffffff;
+            --cinza-escuro: #4a4a4a;
+            --fonte-titulo: 'Dancing Script', cursive;
+            --fonte-corpo: 'Poppins', sans-serif;
+            --transicao-suave: all 0.5s ease-in-out;
+        }
+
+        body {
+            font-family: var(--fonte-corpo);
+            color: var(--cinza-escuro);
+            background-color: var(--rosa-claro);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animação de Corações */
+        .coracoes-subindo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .coracao {
+            position: absolute;
+            font-size: 1.5rem;
+            color: var(--rosa-detalhe);
+            opacity: 0;
+            animation: subir 10s linear infinite;
+        }
+
+        @keyframes subir {
+            0% { transform: translateY(100vh); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-20vh); opacity: 0; }
+        }
+
+        /* Layout Geral */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: var(--fonte-titulo);
+            font-size: clamp(2rem, 5vw, 4rem);
+            color: var(--rosa-detalhe);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .secao {
+            background-color: var(--branco);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transicao-suave);
+        }
+
+        .secao.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-family: var(--fonte-titulo);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--rosa-detalhe);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 2vw, 1.1rem);
+            line-height: 1.6;
+        }
+
+        /* Seção de Textos Especiais (antiga galeria) */
+        .textos-especiais {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .texto-item {
+            background-color: var(--rosa-claro);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+            font-style: italic;
+            transition: transform 0.3s ease;
+        }
+        
+        .texto-item:hover {
+            transform: scale(1.02);
+        }
+        
+        #texto-final p, #mensagem p {
+            white-space: pre-wrap;
+            text-align: left;
+        }
+        
+        #mensagem p {
+            text-align: center;
+        }
+
+        .rodape {
+            margin-top: 2rem;
+            color: var(--cinza-escuro);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Para Mia ❤️</h1>
+        </div>
+    </header>
+
+    <div class="coracoes-subindo"></div>
+
+    <main class="container">
+        <section id="mensagem" class="secao">
+            <h2>Uma mensagem, do meu coração para o seu.</h2>
+            <p>Camila, este pequeno espaço foi criado para te lembrar o quão especial você é para mim. Cada momento ao seu lado se tornou uma memória preciosa. Sou imensamente grato por sua presença, por seu sorriso que ilumina meu dia e por seu jeito único de ser. Você trouxe mais cor e felicidade à minha vida, e eu quero que você saiba o quanto eu aprecio tudo o que você é. Esteja sempre em meu coração, pois é o seu lugar de direito.</p>
+        </section>
+
+        <section id="textos-especiais" class="secao">
+            <h2>Alguns pensamentos sobre nós.</h2>
+            <div class="textos-especiais">
+                <div class="texto-item">
+                    <p>Você é a razão do meu sorriso, o motivo da minha felicidade e a luz no meu caminho.</p>
+                </div>
+                <div class="texto-item">
+                    <p>A cada dia que passa, o meu amor por você só aumenta. Quero construir uma vida inteira ao seu lado, cheia de risadas e momentos inesquecíveis.</p>
+                </div>
+                <div class="texto-item">
+                    <p>Obrigado por ser você. Por me amar de um jeito tão puro e verdadeiro. Te amo!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="texto-final" class="secao">
+            <h2>Uma nova mensagem, de todo o meu coração.</h2>
+            <p>Mia, eu te amo muito! Mais do que eu posso te mostrar, e eu quero muito, de coração, que seja você, tem que ser você, você é alguém muito especial para mim, e isso te define como pessoa. Você é muito especial para mim, para seus pais, seus amigos e para a sua escola, você é sim MUITO inteligente, você é muito dedicada e esforçada no que faz. Mia, se eu pudesse estar do seu lado hoje, e em qualquer dia que você ficasse triste e chorasse como chorou hoje, eu com toda a certeza do mundo eu estaria te abraçando, te aliviando sobre isso, e também, te ajudando em tudo, eu sempre estarei aqui mia, mesmo se você quiser desistir de mim, eu estarei aqui te esperando sempre, e sempre te ajudando. Você é fiel, e eu também sou, não entra na minha cabeça em eu querer outra pessoa, não existe uma pessoa como você, que me deixa sempre todo dia muito feliz, me deixa alegre, me deixa sempre orgulhoso a cada dia que passa por suas conquistas, que sempre me faz bem mesmo quando estou no fundo do poço. Mia, esse site foi feito para você dnv, não para você ficar colecionando sites meus, mas sim, cada site, cada cartinha que eu te mando, cada segundo que eu estou conversando com você é para te mostrar que eu me importo, amo, gosto, dedico e fico por você. Esse mini site foi feito para isso, para te mostrar o quanto eu te amo, o quanto eu quero você e o quanto eu me importo com você. Mia, eu te amo muito! Muito obrigado por cada momento juntos e cada risada, sou muito grato de te ter na minha vida. Tenho muita sorte de te ter na minha vida, eu te amo, mila, sempre e para sempre será você</p>
+        </section>
+    </main>
+
+    <div class="container rodape">
+        <p>Feito com todo o meu amor, só para você Mia ❤️</p>
+    </div>
+
+    <script>
+        // Inicia a criação dos corações animados
+        function criarCoracoes() {
+            const container = document.querySelector('.coracoes-subindo');
+            setInterval(() => {
+                const coracao = document.createElement('div');
+                coracao.innerHTML = '❤️';
+                coracao.classList.add('coracao');
+                coracao.style.left = `${Math.random() * 100}vw`;
+                coracao.style.animationDuration = `${Math.random() * 5 + 5}s`;
+                container.appendChild(coracao);
+                setTimeout(() => coracao.remove(), 10000);
+            }, 500);
+        }
+
+        // Animação de seções ao rolar a página
+        const secoes = document.querySelectorAll('.secao');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        secoes.forEach(secao => {
+            observer.observe(secao);
+        });
+
+        // Inicia as animações ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            criarCoracoes();
+        });
+    </script>
+</body>
+</html>
